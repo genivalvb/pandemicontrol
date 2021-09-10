@@ -14,7 +14,7 @@
 	<name>pandemia</name>
 	<description>Projeto Integrador - 2021 - Disposição de Dados de Pandemias</description>
 	<properties>
-		<java.version>16</java.version>
+		<java.version>11</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
