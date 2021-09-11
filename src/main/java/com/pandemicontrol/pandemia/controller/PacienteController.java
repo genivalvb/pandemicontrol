@@ -25,7 +25,7 @@ public class PacienteController implements PacienteControllerDocs{
         return pacienteService.createPaciente(pacienteDTO);
     }
 
-    @GetMapping("/{name}")
+    @GetMapping("/{nameHash}")
     public PacienteDTO findByNameHash(@PathVariable String nameHash) throws PacienteNotFoundException {
         return pacienteService.findByNameHash(nameHash);
     }
