@@ -20,8 +20,8 @@ public class SwaggerConfig {
 
     private static final String BASE_PACKAGE = "com.pandemicontrol.pandemia.controller";
     private static final String API_TITLE = "Pandemic Data API";
-    private static final String API_DESCRIPTION = "REST API for pandemic data management";
-    private static final String CONTACT_NAME = "Group PI Maua";
+    private static final String API_DESCRIPTION = "REST API for pandemic data management - PI VIII-PEC008-00006";
+    private static final String CONTACT_NAME = "Univesp - Grupo: MAUÁ 1 - 4N.2";
     private static final String CONTACT_GITHUB = "https://gtihub.com/pimaua";
     private static final String CONTACT_EMAIL = "group_pi_maua_univesp@gmail.com";
 
