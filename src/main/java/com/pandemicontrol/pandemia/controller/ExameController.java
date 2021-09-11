@@ -30,7 +30,7 @@ public class ExameController implements ExameControllerDocs{
         return exameService.createExame(exameDTO);
     }
 
-    @GetMapping("/{atendimento}")
+    @GetMapping("/{atendimentoHash}")
     public ExameDTO findByAtendimentoHash(@PathVariable String atendimentoHash) throws ExameNotFoundException {
         return exameService.findByAtendimentoHash(atendimentoHash);
     }
