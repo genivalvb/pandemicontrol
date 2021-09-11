@@ -83,6 +83,17 @@
 			<artifactId>springfox-swagger-ui</artifactId>
 			<version>2.9.2</version>
 		</dependency>
+
+		<dependency>
+			<groupId>javax.validation</groupId>
+			<artifactId>validation-api</artifactId>
+			<version>1.0.CR5</version>
+		</dependency>
+		<dependency>
+			<groupId>com.vladmihalcea</groupId>
+			<artifactId>hibernate-types-52</artifactId>
+			<version>2.12.0</version>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -91,7 +102,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
-					<mainClass>com.pandemicontrol.PandemiaApplication</mainClass>
+					<mainClass>com.pandemicontrol.pandemia.PandemiaApplication</mainClass>
 				</configuration>
 			</plugin>
 			<plugin>
