@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.util.List;
 
+@CrossOrigin(origins = "https://gentle-scrubland-77459.herokuapp.com", maxAge = 3600)
 @RestController
 @RequestMapping("/api/v1/pacientes")
 @AllArgsConstructor(onConstructor = @__(@Autowired))
