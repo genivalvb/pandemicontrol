@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.util.List;
 
-@CrossOrigin(origins = "https://gentle-scrubland-77459.herokuapp.com", maxAge = 3600)
+@CrossOrigin(origins = "*", maxAge = 3600,allowedHeaders = "*")
 @RestController
 @RequestMapping("/api/v1/pacientes")
 @AllArgsConstructor(onConstructor = @__(@Autowired))
@@ -26,9 +26,14 @@ public class PacienteController implements PacienteControllerDocs{
         return pacienteService.createPaciente(pacienteDTO);
     }
 
-    @GetMapping("/{nameHash}")
+    @GetMapping("/hash/{nameHash}")
     public PacienteDTO findByNameHash(@PathVariable String nameHash) throws PacienteNotFoundException {
         return pacienteService.findByNameHash(nameHash);
+    }
+
+    @GetMapping("/{id}")
+    public PacienteDTO findById(@PathVariable Long id) throws PacienteNotFoundException {
+        return pacienteService.findById(id);
     }
 
     @GetMapping
@@ -36,7 +41,7 @@ public class PacienteController implements PacienteControllerDocs{
         return pacienteService.listAll();
     }
 
-    @DeleteMapping("/{id}")
+    @DeleteMapping("/delete/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void deleteById(@PathVariable Long id) throws PacienteNotFoundException {
         pacienteService.deleteById(id);
